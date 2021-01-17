@@ -1,0 +1,12 @@
+.blog{
+    margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    /* justify-content: center; */
+    /* align-items: center; */
+}
+
+.blog div{
+    text-align: left;
+}
