@@ -1,12 +1,7 @@
-.blog{
-    margin: 10px 10px;
-    display: flex;
-    flex-direction: column;
-    padding: 10px 100px;
-    /* justify-content: center; */
-    /* align-items: center; */
-}
+.blog{margin: 10px 10px;display: flex;flex-direction: column;padding: 10px 100px;}.blog div{text-align: left;}
+@media (min-width:200px) and (max-width:600px){
 
-.blog div{
-    text-align: left;
+    .blog{
+        padding: 10px 10px;
+    }
 }
