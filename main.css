@@ -1,4 +1,4 @@
-body{text-align:center} 
+body{text-align:center;background-color: #e1e8ef;} 
 .socialmedia{display:flex}
 .navbar-brand:hover{background-color:#edf0f3;font-weight:700;padding:10px 10px;border-radius:20px}
 .navbar-nav{text-align:center;align-items:center}

@@ -1,4 +1,23 @@
 .blog{margin: 10px 10px;display: flex;flex-direction: column;padding: 10px 100px;}.blog div{text-align: left;}
+.blog-section{
+    margin-left: 9rem;
+    margin-right: 9rem;
+    margin-top: 20px;
+    margin-bottom: 3rem;
+    text-align: left;
+    background-color: #f1f2f3;
+    padding: 31px;
+}
+.blog-section h1{
+    text-align: center;
+}
+.blog-section pre{
+    color: blue;
+    background-color: #e0e2e4;
+    padding: 10px;
+    border-radius: 9px;
+}
+
 @media (min-width:200px) and (max-width:600px){
 
     .blog{
