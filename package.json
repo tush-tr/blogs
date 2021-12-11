@@ -1,5 +1,6 @@
 {
   "name": "blogs",
+  "homepage": "https://tush-tr.github.io/blogs",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
