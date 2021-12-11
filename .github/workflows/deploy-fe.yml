@@ -2,7 +2,7 @@ name: Portfolio Deploy
 on:
   push:
     branches:
-      - "master"
+      - "main"
 jobs:
   build:
     runs-on: ubuntu-latest
