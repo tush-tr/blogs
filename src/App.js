@@ -1,13 +1,16 @@
 import './App.css';
-import {React} from 'react'
-import Home from './homepage'
-import FetchImages from './fetchImg'
+import HomePage from './Home'
+import BlogPost from './BlogPost'
+import { HashRouter as Router, Routes, Route } from "react-router-dom"
 function App() {
   return (
-    <div className="ImageSection">
-       <Home />
-       <FetchImages />
-    </div>
+    <Router>
+    <Routes>
+      <Route exact path="/" element={<HomePage />} />
+      <Route path="/:blogId" element={<BlogPost />} />
+    </Routes>
+  </Router>
+
   );
 }
 

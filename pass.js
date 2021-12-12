@@ -277,11 +277,13 @@ www.facebook.com/account
 const data = {
     "blogs":[
         {
+            "id": "blog1",
             "title":"APIs",
             "content": myHtml,
             "image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2yLYObvG-7syLJnBVuNWnDPfnFsuWB0yeAw&usqp=CAU"
         },
         {
+            "id":"blog2",
             "title":"Rest APIs",
             "content": rest,
             "image":"https://phpenthusiast.com/theme/assets/images/blog/what_is_rest_api.png"

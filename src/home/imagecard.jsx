@@ -1,9 +1,10 @@
 import {React} from 'react'
 import './imageCard.css'
-const ImageCard = ({title,content,image})=>{
+const ImageCard = ({title,content,image,blogid})=>{
+    const path = `/#/${blogid}`
     const modifiedContent = content.slice(0,200)
     return(
-        <a href="/" className="imageCard card2">
+        <a href={path} className="imageCard card2">
             <h1>{title}</h1>
             <img alt="" src={image} />
             <div dangerouslySetInnerHTML={ {__html: modifiedContent} } />

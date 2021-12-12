@@ -1,6 +1,6 @@
-import Navbar from './home/menubar'
-import SocialBar from './home/social'
-import Intro from './home/intro'
+import Navbar from './menubar'
+import SocialBar from './social'
+import Intro from './intro'
 import {React} from 'react'
 import './homepage.css'
 const HomePage = () => {

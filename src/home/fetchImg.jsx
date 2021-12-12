@@ -10,7 +10,7 @@ const FetchImages = ()=>{
         fetch(url).then((response)=>{
             return response.json()
         }).then((data)=>{
-            const modifiedData = data.blogs.map((blog)=>{return {title:blog.title,content:blog.content,image:blog.image}})
+            const modifiedData = data.blogs.map((blog)=>{return {blogid:blog.id,key:blog.id,title:blog.title,content:blog.content,image:blog.image}})
             setImage(modifiedData)
             setLoading(false);
         })        
@@ -23,14 +23,16 @@ const FetchImages = ()=>{
     if (loading) {
         return <h1>Loading...</h1>;
     }
-
+    console.log(images)
+    
     return(
         <div className="imageCards ">
             {
                 images.map((e)=>(
-                    <ImageCard image={e.image} content={e.content} title={e.title} />
+                    <ImageCard blogid={e.blogid} key={e.key} image={e.image} content={e.content} title={e.title} />
                 ))
             }
+            
         </div>
 
     )
