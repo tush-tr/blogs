@@ -1,7 +1,7 @@
 import {React} from 'react'
 import './imageCard.css'
 const ImageCard = ({title,content,image,blogid})=>{
-    const path = `/#/${blogid}`
+    const path = `/blogs/#/${blogid}`
     const modifiedContent = content.slice(0,200)
     return(
         <a href={path} className="imageCard card2">

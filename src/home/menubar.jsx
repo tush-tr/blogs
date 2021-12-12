@@ -3,7 +3,7 @@ const Navbar = () => {
     return (
         <Nav className="firstNavItem" variant="tabs" defaultActiveKey="/home">
             <Nav.Item className="navItem">
-                <Nav.Link href="/">Home</Nav.Link>
+                <Nav.Link href="/blogs">Home</Nav.Link>
             </Nav.Item>
             <Nav.Item>
                 <Nav.Link href="/home">Portfolio</Nav.Link>
