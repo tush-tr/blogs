@@ -1,0 +1,19 @@
+.imageCard{
+height: 350px;
+width: 250px;
+border: solid black;
+align-items: center;
+    display: flex;
+    justify-content: center;
+}
+img{
+    
+    height: 300px;
+    width: 220px;
+
+}
+.imageCards{
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
