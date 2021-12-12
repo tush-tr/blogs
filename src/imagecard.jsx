@@ -1,10 +1,13 @@
 import {React} from 'react'
 import './imageCard.css'
-const ImageCard = ({url})=>{
+const ImageCard = ({title,content,image})=>{
+    const modifiedContent = content.slice(0,200)
     return(
-        <div className="imageCard">
-            <img alt="" src={url} />
-        </div>
+        <a href="/" className="imageCard card2">
+            <h1>{title}</h1>
+            <img alt="" src={image} />
+            <div dangerouslySetInnerHTML={ {__html: modifiedContent} } />
+        </a>
     )
 }
 export default ImageCard

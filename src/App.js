@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="ImageSection">
        <Home />
-      <FetchImages />
+       <FetchImages />
     </div>
   );
 }

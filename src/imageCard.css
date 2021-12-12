@@ -1,11 +1,18 @@
 .imageCard{
 height: 350px;
-width: 250px;
-border: solid black;
+width: 45%;
 align-items: center;
-    display: flex;
-    justify-content: center;
+padding: 10px;
+
 }
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
 img{
     
     height: 300px;
@@ -13,7 +20,9 @@ img{
 
 }
 .imageCards{
-    display: flex;
+   display: flex;
    flex-wrap: wrap;
    justify-content: space-between;
+   margin-left: 100px;
+   margin-right: 100px;
 }
