@@ -5,7 +5,7 @@ const _ = require("lodash");
 require("dotenv").config()
 const express = require("express")
 const app = express()
-
+const port = process.env.port || 3001
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -56,7 +56,7 @@ app.get("/articles/:id", async (req, res) => {
 })
 
 
-app.listen(3001, () => {
+app.listen(port, () => {
     console.log("Server is up")
 })
 
