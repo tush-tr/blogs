@@ -28,7 +28,7 @@ jobs:
 
       
     - name: Build
-      run: yarn build 
+      run: npm build 
       working-directory: ./backend
 
   deploy:
