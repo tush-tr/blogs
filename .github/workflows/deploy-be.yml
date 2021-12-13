@@ -17,7 +17,7 @@ jobs:
       - run: ls
       - name: Connect DB
         run: |-
-          cd /backend
+          cd ./backend
           ls
           touch .env
           echo "MONGOURL=$MONGOURL"
