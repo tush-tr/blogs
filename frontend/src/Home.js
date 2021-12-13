@@ -1,10 +1,10 @@
 import HomeHeader from './home/homepage'
-import FetchImages from './home/fetchImg'
+import FetchBlogs from './home/fetchBlogs'
 export default function HomeIndexPage(){
     return (
         <div className="ImageSection">
             <HomeHeader />
-            <FetchImages />
+            <FetchBlogs />
         </div>
     )
 }

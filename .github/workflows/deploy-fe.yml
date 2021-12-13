@@ -3,6 +3,8 @@ on:
   push:
     branches:
       - "main"
+env:
+  REACT_APP_APIURL: ${{secrets.REACT_APP_APIURL}}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,7 +19,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-    
+      - name: Pass env
+        run: echo "REACT_APP_APIURL=$REACT_APP_APIURL" >> .env.production.local
+        working-directory: ./frontend
+        
       - name: Install Packages
         run: npm ci
         working-directory: ./frontend

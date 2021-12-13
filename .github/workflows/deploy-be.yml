@@ -2,7 +2,7 @@ name: API Deploy
 on:
   push:
     branches:
-      - "build-backend"
+      - "main"
 env:
   MONGOURL: ${{secrets.MONGOURL}}
 jobs:
