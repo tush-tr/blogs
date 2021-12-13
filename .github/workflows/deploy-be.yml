@@ -17,9 +17,9 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
-    - uses: borales/actions-yarn@v2.3.0
-      with:
-        cmd: install
+    - run: npm install --global yarn
+    - name: Install
+      run: yarn install
       working-directory: ./backend
     # - name: Install Packages
     #   run: |
@@ -28,7 +28,7 @@ jobs:
 
       
     - name: Build
-      run: npm run build --if-present
+      run: yarn build --if-present
       working-directory: ./backend
 
   deploy:
