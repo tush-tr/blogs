@@ -1,0 +1,30 @@
+name: API Deploy 
+on:
+  push:
+    branches:
+      - "build-backend"
+env:
+  MONGOURL: ${{secrets.MONGOURL}}
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v1
+      - run: ls
+      - name: Connect DB
+        run: |-
+          cd /backend
+          ls
+          touch .env
+          echo "MONGOURL=$MONGOURL"
+          cat .env
+      # - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+      #   with:
+      #     heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+      #     heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+      #     heroku_email: ${{secrets.HEROKU_EMAIL}}
+      
