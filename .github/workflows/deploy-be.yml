@@ -1,0 +1,56 @@
+name: API Deploy 
+on:
+  push:
+    branches:
+      - "main"
+env:
+  MONGOURL: ${{secrets.MONGOURL}}
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [16.x]
+    steps:
+    - uses: actions/checkout@v1
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm install --global yarn
+    - name: Install
+      run: yarn install
+      working-directory: ./backend
+    # - name: Install Packages
+    #   run: |
+    #     ls
+    #     npm ci
+
+      
+    # - name: Build
+    #   run: npm run build 
+    #   working-directory: ./backend
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps: 
+      - name: Checkout
+        uses: actions/checkout@v1
+      - run: ls
+      - name: Connect DB
+        run: |-
+          cd ./backend
+          ls
+          touch .env
+          echo "MONGOURL=$MONGOURL"
+          cat .env
+      - run: ls
+      - uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
+          heroku_email: ${{secrets.HEROKU_EMAIL}}
+          appdir: ./backend
+          env_file: ./.env
+      

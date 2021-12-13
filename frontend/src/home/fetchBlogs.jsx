@@ -1,16 +1,18 @@
-
 import { React,useEffect, useState } from "react";
-import ImageCard from './imagecard'
+import BlogCard from './BlogCard'
 import './imageCard.css'
 import './imageCard.scss'
+require("dotenv").config();
 const FetchImages = ()=>{
+    console.log(process.env)
     function getImages(){
-        const url = "https://tush-tr.github.io/vanilla-js-projects/index.json";
+        const url = process.env.REACT_APP_APIURL;
+        console.log(url)
         setLoading(true);
         fetch(url).then((response)=>{
             return response.json()
         }).then((data)=>{
-            const modifiedData = data.blogs.map((blog)=>{return {blogid:blog.id,key:blog.id,title:blog.title,content:blog.content,image:blog.image}})
+            const modifiedData = data.map((blog)=>{return {blogid:blog._id,key:blog._id,title:blog.title,content:blog.content,image:blog.image}})
             setImage(modifiedData)
             setLoading(false);
         })        
@@ -29,7 +31,7 @@ const FetchImages = ()=>{
         <div className="imageCards ">
             {
                 images.map((e)=>(
-                    <ImageCard blogid={e.blogid} key={e.key} image={e.image} content={e.content} title={e.title} />
+                    <BlogCard blogid={e.blogid} key={e.key} image={e.image} content={e.content} title={e.title} />
                 ))
             }
             

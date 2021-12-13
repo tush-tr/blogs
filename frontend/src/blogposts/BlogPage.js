@@ -1,23 +1,17 @@
 import { React,useEffect, useState } from "react";
 import {useParams} from 'react-router-dom'
 import './blogpage.css'
+require("dotenv").config();
 const BlogPage = ()=>{
     let { blogId } = useParams();
     console.log(typeof(blogId))
     function getBlogs(){
-        const url = "https://tush-tr.github.io/vanilla-js-projects/index.json";
+        const url = `${process.env.REACT_APP_APIURL}/${blogId}`;
         setLoading(true);
         fetch(url).then((response)=>{
             return response.json()
         }).then((data)=>{
-            let modifiedData;
-            data.blogs.forEach(blogPost => {
-                console.log(blogId)
-                if(blogPost.id===blogId){
-                    console.log(blogPost)
-                    modifiedData = blogPost;
-                }
-            });
+            let modifiedData = data;
             console.log(modifiedData)
             // const modifiedData = data.blogs[0]
             const newmodifiedData =  {key: modifiedData.id,title:modifiedData.title,content:modifiedData.content,image:modifiedData.image}

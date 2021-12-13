@@ -1,6 +1,6 @@
 import BlogPage from './blogposts/BlogPage'
 import HomeHeader from './home/homepage'
-import FetchImages from './home/fetchImg'
+import FetchBlogs from './home/fetchBlogs'
 const BlogPost = ()=>{
     return(
         <div>
@@ -8,7 +8,7 @@ const BlogPost = ()=>{
             <BlogPage />
             <div>
                 <h3>Check some other blogs</h3>
-                <FetchImages />
+                <FetchBlogs />
             </div>
         </div>
     )
