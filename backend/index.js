@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
 app.get("/articles", (req, res) => {
     Article.find((err, findItems) => {
-        res.json(findItems)
+        res.send(findItems)
     })
 })
 app.get("/compose", (req, res) => {
@@ -38,10 +38,9 @@ app.get("/compose", (req, res) => {
 })
 
 app.post("/compose",(req,res)=>{
-    let postContent = JSON.stringify(req.body.content)
     const postForAdd = new Article({
         blogid: req.body.blogid,
-        content: postContent,
+        content: req.body.content,
         title: req.body.title,
         tag: req.body.tag,
         image: req.body.image
