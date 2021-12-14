@@ -1,10 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Cinzel:400,700,900|Lato:100,300,400,700,900|Lobster|Lora:400,700|Mansalva|Muli:200,300,400,600,700,800,900|Open+Sans:300,400,600,700,800|Oswald:200,300,400,500,600,700|Roboto:100,300,400,500,700,900&display=swap');
+/* Used Google Fonts */
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Mansalva', cursive;
+font-family: 'Lato', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Lora', serif;
+font-family: 'Muli', sans-serif;
+font-family: 'Lobster', cursive;
+font-family: 'Cinzel', serif;
+font-family: 'Bangers', cursive; */
+/* Used Google Fonts */
+.logo-holder{
+    text-align:center;
+    width: 300px;
+    height: 120px;
+    background: #fff;
+    border-radius: 10px;
+    margin: 10px;
+    float: left;
+    padding:20px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  .logo-3 h3 {
+    color: #e74c3c;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 300;
+    font-size: 50px;
+    line-height:1.3;
+}
+a{
+    text-decoration:none !important;
+    display: inline-block;
+}
+.logo-3 p {
+    font-size: 14px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    background: #34495e;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 5px;
+}
 header{
     background-color: #e3e3e3;
 }
 .headercss{
     display: flex;
-    /* position: relative; */
-    /* z-index: 50; */
     padding: 16px;
 }
 .firstNavItem{
@@ -13,6 +59,16 @@ header{
 .navitems{
     color: inherit;
     text-decoration: inherit;
+}
+
+.searchTop{
+    display:flex;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 100px;
+    padding-right: 10px;
+
 }
 
 .nav-tabs .nav-link.active {
@@ -31,7 +87,7 @@ header{
 .introContainer{
     background-color: #f5f5f5e3;;
     display:flex;
-    padding: 60px;
+    padding-top: 30px;
     overflow: hidden;
     animation: slideIn;
     animation-fill-mode: forwards;
@@ -53,4 +109,16 @@ header{
 }
 #aboutme p{
     padding:30px;
+}
+.nav-link{
+    color:black;
+    font-weight: bold;
+}
+.nav-tabs .nav-link {
+    margin-bottom: -1px;
+    background: 0 0;
+    border: 1px solid #ffffffc9;
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0.25rem;
+    background-color: #e9e9e9;
 }

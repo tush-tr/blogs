@@ -12,21 +12,25 @@ const BlogPage = ()=>{
             return response.json()
         }).then((data)=>{
             let modifiedData = data;
-            console.log(modifiedData)
-            // const modifiedData = data.blogs[0]
             const newmodifiedData =  {key: modifiedData.id,title:modifiedData.title,content:modifiedData.content,image:modifiedData.image}
             setBlogs(newmodifiedData)
+            
             setLoading(false);
         })        
     }
     const [blogs, setBlogs] = useState([]);
+    
     const [loading, setLoading] = useState(false);
     useEffect(getBlogs,[blogId])
     
+    
+
     if (loading) {
         return <h1>Loading...</h1>;
     }
     return(
+        
+            
         <div className="blogPostPage">
             <h1 className="BlogTitle">{blogs.title}</h1>
             <div className="blogImageContainer" >
@@ -34,6 +38,7 @@ const BlogPage = ()=>{
             </div>
             <div dangerouslySetInnerHTML={ {__html: blogs.content} } />
         </div>
+        
     )
 }
 export default BlogPage;

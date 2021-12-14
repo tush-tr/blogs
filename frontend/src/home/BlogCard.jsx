@@ -5,7 +5,7 @@ const ImageCard = ({title,content,image,blogid})=>{
     const modifiedContent = content.slice(0,200)
     console.log(modifiedContent)
     return(
-        <a href={path} className="imageCard card2">
+        <a href={path} className="imageCard card2" >
             <h1>{title}</h1>
             <img alt="" src={image} />
             <div dangerouslySetInnerHTML={ {__html: modifiedContent} } />
