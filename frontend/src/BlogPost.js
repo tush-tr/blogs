@@ -43,7 +43,7 @@ const BlogPost = () => {
         return <h1>Loading...</h1>;
     }
     return (
-        <div>
+        <div className="blogPageIntro">
             <Header searchData={searchData} />
                 <BlogPage />
                 <BlogList blogs={data} />
