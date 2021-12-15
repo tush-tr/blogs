@@ -8,7 +8,7 @@ const ImageCard = ({title,content,image,blogid})=>{
         <a href={path} className="imageCard card2" >
             <h1>{title}</h1>
             <img alt="" src={image} />
-            <div dangerouslySetInnerHTML={ {__html: modifiedContent} } />
+            <div id="blogSlicedContent" dangerouslySetInnerHTML={ {__html: modifiedContent} } />
         </a>
     )
 }
