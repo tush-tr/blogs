@@ -1,40 +1,47 @@
-.blogPostPage{
-    padding-top: 10px;
-    margin-left: 50px;
-    margin-right: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-color: whitesmoke;
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-}
-h1{
-    text-align: center;
-}
-.BlogTitle{
-    margin: 30px;
-}
-pre{
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    border-left: 3px solid #f36d33;
-    color: #666;
-    page-break-inside: avoid;
-    font-family: monospace;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 1.6em;
-    max-width: 100%;
-    overflow: auto;
-    padding: 1em 1.5em;
-    display: block;
-    word-wrap: break-word;
-}
-img{
-    display: block;
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Mono:ital@1&display=swap");
+.blogPostPage {
+  padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: rgb(234 230 230);
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  width: 80%;
+  border-left: 1px solid rgb(165 161 161);
+  border-right: 1px solid rgb(165 161 161);
+  font-family: "PT Serif", serif;
+  font-family: "Roboto Mono", monospace;
+}
+h1 {
+  text-align: center;
+}
+.BlogTitle {
+  margin: 30px;
+}
+pre {
+  background: #f4f4f4;
+  border: 1px solid #ddd;
+  border-left: 3px solid #f36d33;
+  color: #666;
+  page-break-inside: avoid;
+  font-family: monospace;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1em 1.5em;
+  display: block;
+  word-wrap: break-word;
+}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  height: 250px;
 }
 /* .blogImageContainer{
     align-items: center;

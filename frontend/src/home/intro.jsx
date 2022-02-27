@@ -1,3 +1,4 @@
+import './intro.css'
 import mine from '../mine.jpg'
 const Intro = () => {
     return (

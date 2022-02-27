@@ -1,28 +1,39 @@
-.imageCard{
-height: 350px;
-width: 45%;
-align-items: center;
-padding: 10px;
-
+.imageCard {
+  height: 350px;
+  width: 45%;
+  align-items: center;
+  padding: 10px;
 }
 
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif&family=Roboto+Mono:ital@1&display=swap");
 
-
-img{
-    
-    height: 300px;
-    width: 220px;
-
+img {
+  height: 300px;
+  width: 220px;
 }
-.imageCards{
-   display: flex;
-   flex-wrap: wrap;
-   justify-content: space-between;
-   margin-left: 100px;
-   margin-right: 100px;
+.imageCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+#blogSlicedContent {
+  font-size: 15px;
+  font-family: "PT Serif", serif;
+  font-family: "Roboto Mono", monospace;
+}
+#blogSlicedContent h1 {
+  font-size: 15px;
+}
+#blogSlicedContent h2 {
+  font-size: 15px !important;
+}
+#blogSlicedContent h3 {
+  font-size: 15px !important;
 }
