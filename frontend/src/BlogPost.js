@@ -3,6 +3,7 @@ import { React, useEffect, useState } from "react";
 import Header from './home/header'
 import BlogList from './home/fetchBlogs'
 import Fuse from "fuse.js";
+import Loading from "./loading/blog"
 const BlogPost = () => {
     function getImages() {
         const url = process.env.REACT_APP_APIURL;
@@ -40,7 +41,7 @@ const BlogPost = () => {
         }
     };
     if (loading) {
-        return <h1>Loading...</h1>;
+        return <Loading />;
     }
     return (
         <div className="blogPageIntro">

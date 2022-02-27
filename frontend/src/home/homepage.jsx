@@ -2,6 +2,7 @@ import { React, useEffect, useState } from "react";
 import Fuse from "fuse.js";
 import BlogList from './fetchBlogs'
 import Header from './header'
+import Loading from '../loading'
 import './homepage.css'
 require("dotenv").config();
 
@@ -42,7 +43,7 @@ const HomePage = () => {
         }
     };
     if (loading) {
-        return <h1>Loading...</h1>;
+        return <Loading />;
     }
     return (
         <div>

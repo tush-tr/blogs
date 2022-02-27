@@ -1,5 +1,6 @@
 import { React,useEffect, useState } from "react";
 import {useParams} from 'react-router-dom'
+import Loading from '../loading/blog'
 import './blogpage.css'
 require("dotenv").config();
 const BlogPage = ()=>{
@@ -26,7 +27,7 @@ const BlogPage = ()=>{
     
 
     if (loading) {
-        return <h1>Loading...</h1>;
+        return <Loading />;
     }
     return(
         
