@@ -21,15 +21,6 @@ jobs:
     - name: Install
       run: yarn install
       working-directory: ./backend
-    # - name: Install Packages
-    #   run: |
-    #     ls
-    #     npm ci
-
-      
-    # - name: Build
-    #   run: npm run build 
-    #   working-directory: ./backend
 
   deploy:
     needs: build
