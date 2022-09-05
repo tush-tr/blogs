@@ -6,8 +6,8 @@ const FetchImages = ({blogs})=>{
     return(
         <div className="imageCards ">
             {
-                blogs.map((e)=>(
-                    <BlogCard blogid={e.blogid} key={e.key} image={e.image} content={e.content} title={e.title} />
+                blogs.map(({id,slug,title,content,coverPhoto})=>(
+                    <BlogCard blogid={id} key={id} image={coverPhoto.url} content={content} title={title} slug={slug} />
                 ))
             }
         </div>

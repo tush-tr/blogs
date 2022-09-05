@@ -7,7 +7,7 @@ const Header = ({searchData})=>{
         <div>
             <header >
             <div className="searchTop">
-                    <div class="logo-holder logo-3">
+                    <div className="logo-holder logo-3">
                         <a href="/">
                             <h3>Blogs</h3>
                             <p>By Tushar</p>
