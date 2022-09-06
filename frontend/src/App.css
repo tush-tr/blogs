@@ -6,6 +6,16 @@
   height: 40vmin;
   pointer-events: none;
 }
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: rgb(50, 50, 50);
+}
+
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -41,6 +51,9 @@
 }
 .SocialBar{
     margin-left: auto;
+}
+.blogPageIntro{
+    background-color: #eae6e6;
 }
 
 @media (min-width: 200px) and (max-width: 600px){

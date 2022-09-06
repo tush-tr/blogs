@@ -4,7 +4,7 @@ const SocialBar = ()=>{
         <Nav className="SocialBar" variant="tabs" defaultActiveKey="/home">
             <Nav.Item>
                 <Nav.Link eventKey="link-1" href="https://twitter.com/tush_tr604" target="_blank">
-                <i class="fab fa-twitter"></i>
+                <i className="fab fa-twitter"></i>
                 </Nav.Link>
             </Nav.Item>
             <Nav.Item>

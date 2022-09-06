@@ -5,6 +5,7 @@ on:
       - "main"
 env:
   REACT_APP_APIURL: ${{secrets.REACT_APP_APIURL}}
+  GRAPHQL_API_URL: ${{ secrets.API_URL }}
 jobs:
   build:
     runs-on: ubuntu-latest
