@@ -15,8 +15,6 @@
   color: rgb(50, 50, 50);
 }
 
-
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -46,147 +44,147 @@
     transform: rotate(360deg);
   }
 }
-.ImageSection{
-    margin-bottom: 100px;
+.ImageSection {
+  margin-bottom: 100px;
 }
-.SocialBar{
-    margin-left: auto;
+.SocialBar {
+  margin-left: auto;
 }
-.blogPageIntro{
-    background-color: #eae6e6;
+.blogPageIntro {
+  background-color: #eae6e6;
 }
 
-@media (min-width: 200px) and (max-width: 600px){
-    header .searchTop {
-        flex-direction: column;
-        padding-top: 15px;
-        padding-bottom: 5px;
-        padding-left: 20px;
-        padding-right: 20px;
-        justify-content: center;
-    }
-    header .searchTop .Search {
-        width: 80%;
-        margin: 0 auto 0px auto;
-    }
-    
-    header .searchTop .logo-holder {
-        text-align: center;
-        width: 60%;
-        height: 78px;
-    }
-    header .searchTop .logo-3 h3 {
-        color: #e74c3c;
-        font-family: 'Oswald', sans-serif;
-        font-weight: 300;
-        font-size: 30px;
-        line-height: 1.3;
-    }
-    header .searchTop .logo-3 p {
-        font-size: 10px;
-        letter-spacing: 7px;
-        text-transform: uppercase;
-        background: #34495e;
-        font-weight: 400;
-        color: #fff;
-        padding-left: 5px;
-    }
-    header .headercss{
-        justify-content: center;
-        align-items: center;
-    }
-    .ImageSection div .introContainer{
-        padding-top: 2px;
-        padding-right: 0; 
-        padding-left: 0; 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .ImageSection div .introContainer img{
-        margin-right: auto;
-        height: 120px;
-        width: 120px;
-    }
-    .ImageSection div .introContainer #aboutme h1{
-        padding-top: 10px;
-    }
-    .ImageSection div .introContainer #aboutme p{
-        margin-top: -21px;
-        margin-bottom: 1rem;
-        font-size: small;
-        padding: 15px;
-    }
-    .SocialBar{
-        margin-left:none;
-        margin:auto;
-    }
-    
-    .ImageSection div .imageCards {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin: auto;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .imageCards .card2{
-        padding: 10px 10px;
-        margin: auto;
-        width: 80%;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-    .card2 #blogSlicedContent{
-        font-size: 11px;
-    }
-    .card2 #blogSlicedContent h1{
-        font-size:15px;
-    }
-    .card2 #blogSlicedContent h2{
-        font-size:13px;
-    }
-    .card2 img {
-        height: 150px;
-        width: 90%;
-    }
+@media (min-width: 200px) and (max-width: 600px) {
+  header .searchTop {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+  }
+  header .searchTop .Search {
+    width: 80%;
+    margin: 0 auto 0px auto;
+  }
 
-    /*  */
-    .blogPageIntro div .introContainer{
-        padding-top: 2px;
-        padding-right: 0; 
-        padding-left: 0; 
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .blogPageIntro .imageCards {
-        flex-wrap: nowrap;
-        flex-direction: column;
-        margin: auto;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    .blogPageIntro div .introContainer img{
-        margin-right: auto;
-        height: 120px;
-        width: 120px;
-    }
-    .blogPageIntro div .introContainer #aboutme h1{
-        padding-top: 10px;
-    }
-    .blogPageIntro div .introContainer #aboutme p{
-        margin-top: -21px;
-        margin-bottom: 1rem;
-        font-size: small;
-        padding: 15px;
-    }
-    .blogPageIntro .blogPostPage{
-        margin-left: 0;
-        margin-right: 0;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-    .blogPageIntro .blogPostPage .blogImageContainer img{
-        width:90%;
-    }
+  header .searchTop .logo-holder {
+    text-align: center;
+    width: 60%;
+    height: 78px;
+  }
+  header .searchTop .logo-3 h3 {
+    color: #e74c3c;
+    font-family: "Oswald", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 1.3;
+  }
+  header .searchTop .logo-3 p {
+    font-size: 10px;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    background: #34495e;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 5px;
+  }
+  header .headercss {
+    justify-content: center;
+    align-items: center;
+  }
+  .ImageSection div .introContainer {
+    padding-top: 2px;
+    padding-right: 0;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .ImageSection div .introContainer img {
+    text-align: center;
+    height: 120px;
+    width: 120px;
+  }
+  .ImageSection div .introContainer #aboutme h1 {
+    padding-top: 10px;
+  }
+  .ImageSection div .introContainer #aboutme p {
+    margin-top: -21px;
+    margin-bottom: 1rem;
+    font-size: small;
+    padding: 15px;
+  }
+  .SocialBar {
+    margin-left: none;
+    margin: auto;
+  }
+
+  .ImageSection div .imageCards {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .imageCards .card2 {
+    padding: 10px 10px;
+    margin: auto;
+    width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .card2 #blogSlicedContent {
+    font-size: 11px;
+  }
+  .card2 #blogSlicedContent h1 {
+    font-size: 15px;
+  }
+  .card2 #blogSlicedContent h2 {
+    font-size: 13px;
+  }
+  .card2 img {
+    height: 150px;
+    width: 90%;
+  }
+
+  /*  */
+  .blogPageIntro div .introContainer {
+    padding-top: 2px;
+    padding-right: 0;
+    padding-left: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .blogPageIntro .imageCards {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .blogPageIntro div .introContainer img {
+    margin-right: auto;
+    height: 120px;
+    width: 120px;
+  }
+  .blogPageIntro div .introContainer #aboutme h1 {
+    padding-top: 10px;
+  }
+  .blogPageIntro div .introContainer #aboutme p {
+    margin-top: -21px;
+    margin-bottom: 1rem;
+    font-size: small;
+    padding: 15px;
+  }
+  .blogPageIntro .blogPostPage {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .blogPageIntro .blogPostPage .blogImageContainer img {
+    width: 90%;
+  }
 }
