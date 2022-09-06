@@ -34,6 +34,7 @@ const HomePage = () => {
   const [posts, setPosts] = useState([]);
   const [data, setData] = useState(posts);
   const [loading, setLoading] = useState(false);
+  console.log(apiUrl)
 
   useEffect(() => {
     getPosts().then((posts) => {
