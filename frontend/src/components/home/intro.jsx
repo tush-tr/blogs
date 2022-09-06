@@ -1,5 +1,5 @@
 import './intro.css'
-import mine from '../mine.jpg'
+import mine from '../../mine.jpg'
 const Intro = () => {
     return (
         <div className="introContainer">

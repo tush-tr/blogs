@@ -3,7 +3,7 @@ import Fuse from "fuse.js";
 import { GraphQLClient, gql } from "graphql-request";
 import BlogList from "./fetchBlogs";
 import Header from "./header";
-import Loading from "../loading";
+import Loading from "../../loading";
 import { apiUrl } from "../../config/config";
 import "./homepage.css";
 require("dotenv").config();
