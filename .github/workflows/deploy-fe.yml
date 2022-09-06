@@ -4,8 +4,7 @@ on:
     branches:
       - "main"
 env:
-  REACT_APP_APIURL: ${{secrets.REACT_APP_APIURL}}
-  GRAPHQL_API_URL: ${{ secrets.API_URL }}
+  REACT_APP_API_URL: ${{secrets.REACT_APP_API_URL }}
 jobs:
   build:
     runs-on: ubuntu-latest
