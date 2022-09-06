@@ -1,6 +1,6 @@
 import BlogPage from "../components/Post";
 
-import Header from "../home/header";
+import Header from "../components/home/header";
 
 const BlogPost = () => {
   return (
