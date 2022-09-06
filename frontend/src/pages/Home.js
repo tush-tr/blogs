@@ -1,4 +1,4 @@
-import HomeHeader from "../home/homepage";
+import HomeHeader from "../components/home/homepage";
 export default function HomeIndexPage() {
   return (
     <div className="ImageSection">
